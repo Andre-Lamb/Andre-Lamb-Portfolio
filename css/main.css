@@ -106,6 +106,8 @@ main{
 .scroll-container {
   background-color: #333;
   overflow: auto;
+  scrollbar-width:auto;
+  scrollbar-color: rgb(245, 188, 0) #685539;
   white-space: nowrap;
   padding: 10px;
 }
