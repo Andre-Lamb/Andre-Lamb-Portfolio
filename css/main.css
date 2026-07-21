@@ -1,0 +1,120 @@
+h1{
+    font-family: "Montserrat", 'Gill Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 7em;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    margin: 50px;
+}
+h2{
+    font-family: "Montserrat", 'Gill Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 5em;
+    position: relative;
+    left: 100px;
+    margin: 50px;
+}
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/Background_Looping.png);
+    background-size: contain;
+}
+
+header{
+    width: 100vw;
+    height: 250px;
+    position: fixed;
+    z-index: 100;
+}
+header img{
+    width: 100%;
+    height: 100%;
+}
+#home-flag{
+    width: 10%;
+    height: 320px;
+    background-color: rgb(245, 188, 0);
+}
+.logo{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-flag{
+    width: 14%;
+    height: 180px;
+    background-color: purple;
+}
+.nav-flag a{
+    font-family: "Montserrat", 'Gill Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.8em;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main{
+    width: 100vw;
+    height: 1380px;
+}
+.video{
+    width: 1280px;
+    height: 720px;
+    position: relative;
+    left: 50%;
+    top: 550px;
+    transform: translate(-50%, 0);
+    background-color: black;
+}
+
+#breakdown{
+    width: 100vw;
+    height: 1080px;
+}
+.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+.scroll-container img {
+  padding: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
