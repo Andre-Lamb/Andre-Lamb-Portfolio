@@ -63,9 +63,10 @@ header nav{
     top: 0;
     left: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: right;
+    gap: 10px;
 }
-header nav div{
+header div{
     display: flex;
     justify-content: center;
 }
