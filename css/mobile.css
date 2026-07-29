@@ -1,5 +1,29 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
     h1{
         font-size: 2em;
+        padding-top: 120px;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 1em;
+    }
+    header{
+        height: 100px;
+    }
+    .nav-flag{
+        width: 100px;
+    }
+    .nav-flag a{
+        font-size: 1em;
+    }
+    #home-flag{
+        width: 80px;
+    }
+    .scroll-container img{
+        height: 200px;
+        width: 300px;
+        padding: 3px;
     }
 }
