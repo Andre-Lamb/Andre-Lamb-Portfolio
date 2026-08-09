@@ -43,13 +43,12 @@
 
 
 //Mobile ribbon variables
-const ribbonMotion = [{transform: 'translateY(-20px)'}, {transform: 'translateY(100px)'},];
-const ribbonTime = {duration: 100, iterations: 1,};
-const ribbon = document.querySelector('a');
+const ribbon = document.querySelector('.mobile-flag');
+let ribbonDown = false;
 
 ribbon.onclick = function() {
-    ribbon.animate(ribbonMotion, ribbonTime);
-    ribbon.transform = 'translateY(100)';
+    ribbon.classList.toggle('flag-down');
+    ribbonDown = !ribbonDown;
 }
 //Breakdown variables
 const breakdownText = document.querySelectorAll('.breakdown-text p');
@@ -69,12 +68,18 @@ function breakdownUpdate(){
 const header = document.querySelector('#rolling');
 
 document.onscroll = function() {
+    //Moving the header's texture to mimic scrolling
     let scrollCurrent = document.documentElement.scrollTop/(document.documentElement.scrollHeight-window.innerHeight);
     scrollCurrent = 100-100*scrollCurrent + '%';
     scrollCurrent = '50% ' + scrollCurrent;
     console.log(scrollCurrent);
     header.style.backgroundPosition = scrollCurrent;
     console.log(header.style.backgroundPosition);
+    //Closing the burger menu if open
+    if (ribbonDown) {
+        ribbon.classList.toggle('flag-down');
+        ribbonDown = false;
+    }
 }
 
 window.addEventListener('load', breakdownUpdate);

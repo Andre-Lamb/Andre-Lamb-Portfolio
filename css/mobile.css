@@ -21,10 +21,15 @@
     .mobile-flag{
         display: inline;
         width: 100px;
-        height: 400px;
+        height: 420px;
+        transform: translate(0, -330px);
+        transition: 0.5s;
+    }
+    .flag-down{
+        transform: translate(0, 0);
     }
     .mobile-hover{
-        background-color: rgb(151, 35, 151);
+        background-color: #400C70;
         transform: translate(0, 0);
         width: 100%;
         height: 100%;
@@ -32,17 +37,19 @@
         flex-direction: column;
         justify-content: space-around;
     }
+    /* .mobile-hover:hover{
+        transform: translate(0, 20px);
+    } */
     .mobile-hover div{
         width: 100%;
         height: 0;
     }
-    /* .mobile-hover:hover{
-        transform: translate(0, 0);
-    } */
-    nav div a{
-        width: 100%;
+    .mobile-hover a{
         height: 10%;
         font-size: 1em;
+        transform: translate(-50%, 0);
+    }
+    nav a:hover{
         transform: translate(-50%, 0);
     }
     .scroll-container img{

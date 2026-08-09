@@ -33,7 +33,7 @@ p{
     box-sizing: border-box;
     /* hides the side and downward scroll bars */
     scrollbar-width: none;
-    scrollbar-color: rgb(245, 188, 0) #685539;
+    scrollbar-color: #DE8F07 #685539;
 }
 html, body{
     margin: 0;
@@ -55,6 +55,8 @@ header img{
     width: 100%;
     height: 100%;
     opacity: 0.75;
+    pointer-events: none;
+    user-select: none;
 }
 #shading{
     width: 100%;
@@ -90,8 +92,8 @@ nav a{
     transform: translate(-50%, -20px);
     display: flex;
     align-items: center;
-    justify-content: center;   
-    
+    justify-content: center;
+    transition: 0.05s;    
 }
 nav a:hover{
     transform: translate(-50%, 0);
@@ -105,10 +107,11 @@ nav a:hover{
     z-index: 150;
 }
 #home-flag a{
-    background-color: rgb(245, 188, 0);
+    background-color: #DE8F07;
     width: 100%;
     height: 133%;
     transform: translate(0, -20px);
+    transition: 0.1s; 
 }
 #home-flag a:hover{
     transform: translate(0, 0);
@@ -133,7 +136,7 @@ nav div{
 nav div a{
     width: 100%;
     height: 100%;
-    background-color: rgb(151, 35, 151);
+    background-color: #400C70;
     font-family: "Montserrat", 'Gill Sans', sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
