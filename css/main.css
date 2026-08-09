@@ -38,6 +38,7 @@ p{
 html, body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     background-image: url(../images/Background_Looping.png);
@@ -45,15 +46,28 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 100vw;
     height: 150px;
     position: fixed;
     z-index: 100;
 }
-/* placeholder before we have 3d cylinder */
 header img{
     width: 100%;
     height: 100%;
+    opacity: 0.75;
+}
+#shading{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    position: absolute;
+}
+#rolling{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Background_Looping.png);
+    background-size: cover;
+    background-position: 50% 100%;
 }
 header nav{
     width: 100%;
@@ -105,6 +119,9 @@ nav a:hover{
     margin-left: 6%;
     margin-right: 6%;
     position: relative;
+}
+.logo img{
+    opacity: 1;
 }
 .header-spacer{
     width: 56%;

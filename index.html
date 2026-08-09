@@ -13,7 +13,10 @@
     </head>
     <body>
         <header>
-            <img src="images/Header_Image.png" alt="Header scroll">
+            <!-- <div class="cylinder"></div> -->
+            <img id="shading" src="images/Header_Shading.jpg" alt="3D shading to make the header appear cylindrical">
+            <div id="rolling"></div>
+            <img src="images/Header_Shadow.png" alt="A shadow under the header to create the illusion of depth">
             <div id="home-flag">
                 <a href="#">
                     <div class="logo">
@@ -102,6 +105,14 @@
             </div>
             <div class="footer-spacer"></div>
         </footer>
-        <script src="javascript/main.js"></script>
+        <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.148.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.148.0/examples/jsm/"
+            }
+        }
+        </script>
+        <script src="javascript/main.js" type="module"></script>
     </body>
 </html>
