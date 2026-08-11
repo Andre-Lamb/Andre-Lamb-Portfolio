@@ -1,10 +1,14 @@
 @media screen and (max-width: 760px) {
     h1{
         font-size: 2em;
-        padding-top: 120px;
+        padding-top: 130px;
     }
     h2{
         font-size: 1.2em;
+    }
+    h3{
+        font-size: 1.1em;
+        margin-bottom: 3px;
     }
     p{
         font-size: 1em;
@@ -20,7 +24,7 @@
     }
     .mobile-flag{
         display: inline;
-        width: 100px;
+        width: 80px;
         height: 420px;
         transform: translate(0, -330px);
         transition: 0.5s;
@@ -49,12 +53,20 @@
         font-size: 1em;
         transform: translate(-50%, 0);
     }
+    nav div a{
+        background-image: none;
+    }
     nav a:hover{
         transform: translate(-50%, 0);
+        font-size: 1.1em;
     }
     .scroll-container img{
         height: 200px;
         width: 300px;
         padding: 3px;
+    }
+    .clicked-img{
+        width: 84% !important;
+        margin-left: 8% !important;
     }
 }
