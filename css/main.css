@@ -220,13 +220,24 @@ footer{
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
 }
 .contact-icons a{
     position: relative;
     height: 100px;
     width: 100px;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.contact-icons i{
+    font-size: 7em;
+    color: black;
+}
+.contact-icons i:hover{
+    color: rgb(245, 188, 0);
 }
 .footer-spacer{
     height: 100px;

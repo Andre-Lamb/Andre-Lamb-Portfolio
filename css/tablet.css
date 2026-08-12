@@ -29,4 +29,14 @@
         width: 450px;
         padding: 3px;
     }
+    .contact-icons{
+        gap: 30px;
+    }
+    .contact-icons a{
+        height: 75px;
+        width: 75px;
+    }
+    .contact-icons i{
+        font-size: 5em;
+    }
 }

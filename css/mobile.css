@@ -70,4 +70,14 @@
         width: 84% !important;
         margin-left: 8% !important;
     }
+    .contact-icons{
+        gap: 20px;
+    }
+    .contact-icons a{
+        height: 60px;
+        width: 60px;
+    }
+    .contact-icons i{
+        font-size: 4em;
+    }
 }
