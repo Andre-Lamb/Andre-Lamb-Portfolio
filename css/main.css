@@ -191,7 +191,7 @@ main{
 .scroll-container img{
     /* transition: 1s; */
     padding: 5px;
-    /* maybe make the image centre and scale to the box size */
+    cursor: zoom-in;
 }
 .clicked-img{
     position: fixed !important;
@@ -203,6 +203,7 @@ main{
     top: 50% !important;
     transform: translate(0, -50%) !important;
     z-index: 200 !important;
+    cursor: zoom-out !important;
 }
 .breakdown-text{
     width: 84%;

@@ -28,6 +28,7 @@
         height: 420px;
         transform: translate(0, -330px);
         transition: 0.5s;
+        cursor: pointer;
     }
     .flag-down{
         transform: translate(0, 0);
