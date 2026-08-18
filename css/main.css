@@ -180,9 +180,9 @@ main img{
     z-index: 80;
 }
 .video{
-    width: 84%;
+    width: 70%;
     aspect-ratio: 16/9;
-    margin-left: 8%;
+    margin-left: 15%;
     margin-top: 0;
     mask-image: url(../images/Video_Mask.svg);
     mask-size: 100% 100%;
@@ -192,10 +192,10 @@ main img{
     height: auto;
 }
 .scroll-container{
-  overflow: auto;
-  scrollbar-width:auto;
-  scrollbar-color: rgb(245, 188, 0) #68553900;
-  white-space: nowrap;
+    overflow: auto;
+    scrollbar-width:auto;
+    scrollbar-color: rgb(245, 188, 0) #68553900;
+    white-space: nowrap;
 }
 .scroll-container img{
     padding: 5px;
