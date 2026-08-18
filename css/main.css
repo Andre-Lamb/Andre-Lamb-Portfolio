@@ -196,7 +196,6 @@ main img{
   scrollbar-width:auto;
   scrollbar-color: rgb(245, 188, 0) #68553900;
   white-space: nowrap;
-  transition: 2s;
 }
 .scroll-container img{
     padding: 5px;
