@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rigging Portfolio - Lambdre</title>
+        <link rel="icon" href="images/Andre_Lamb_Logo.svg">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tablet.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f9ff006012.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <img id="shading" src="images/Header_Shading.jpg" alt="3D shading to make the header appear cylindrical">
+            <div id="rolling"></div>
+            <img src="images/Header_Shadow.png" alt="A shadow under the header to create the illusion of depth">
+            <div id="home-flag">
+                <a href="index.html">
+                    <div class="logo">
+                        <img src="images/Andre_Lamb_Logo.svg" alt="My personal logo">
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <div class="nav-flag">
+                    <a href="#" id="page-flag">rigs</a>
+                </div>
+                <div class="nav-flag">
+                    <a href="gaming.html">games</a>
+                </div>
+                <div class="nav-flag">
+                    <a href="acting.html">acting</a>
+                </div>
+                <div class="nav-flag">
+                    <a href="#contact">info</a>
+                </div>
+                <div class="nav-flag">
+                    <a href="index.html">home</a>
+                </div>
+                <div class="mobile-flag">
+                    <div class="mobile-hover">
+                        <div></div>
+                        <a class="mobile-a" href="">rigs</a>
+                        <a class="mobile-a" href="">models</a>
+                        <a class="mobile-a" href="">games</a>
+                        <a class="mobile-a" href="">other</a>
+                        <a class="mobile-a" href="">acting</a>
+                        <a class="mobile-a">more</a>
+                        <div></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>3D Rigging Reel</h1>
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/44VdIQGQGZw?si=xqzO4pTIWZpz9Suu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </main>
+        <div id="breakdown">
+            <h2>Process Breakdown</h2>
+            <div class="scroll-container">
+                <img src="images/A (1).jpg" alt="" width="600" height="400">
+                <img src="images/A (2).jpg" alt="" width="600" height="400">
+                <img src="images/A (3).jpg" alt="" width="600" height="400">
+                <img src="images/A (4).jpg" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+                <img src="images/Background_Looping.png" alt="" width="600" height="400">
+            </div>
+            <div class="breakdown-text">
+                <h3>The Guy (The depths of my mind)</h3>
+                <p>
+                    After seeing them in a vision on the train home, I rushed to model and rig The Guy in just a few hours at night. The face introduced a number of challenging features, such as the teeth and eyeball occupying the same space, and the aforementioned eyeball being non-spherical. As a fan of physical driver controls, I linked all the face controls into a very visual set up, tying in visibility and a blinking blendshape, as well as linking the eyeball’s UV coordinates proportionally to its controller.
+                </p>
+                <h3>CHEF (Risk of Rain)</h3>
+                <p>
+                    One of the first full rigs I created, CHEF’s physics defying arms allowed me the space to experiment with a variety of techniques to bring them to life. I kept a scene on the side with all my different tests and eventually settled on using a spline IK on a chain of bones, each of which were scaled proportional to an arc length node that was keeping track of the spline’s length. This gave CHEF’s arms the stretch they required, as well as the flexibility, which was achieved with cluster controls on the points of the spline. 
+                    I also had some fun with jiggling vertexes for CHEF’s moustache and hat, the latter of which’s bone is taking only 50% influence from its controller to mimic an elastic feel.
+                </p>
+                <h3>Calvin (Cat Plush)</h3>
+                <p>
+                    Part of a larger project I set myself in which I modelled and rigged objects I owned, Calvin introduced the difficult challenge of malleability. His final rig consists of a mix of bones in both FK (ears/tail) and IK (hands/feet), as well as a lattice deformer, all held together with pin constraints. While not completely comprehensive to every shape the real world plush can take, I’m very happy with how well this rig mimics the squishability of Calvin.
+                </p>
+                <h3>Billy (Steamworld Heist)</h3>
+                <p>
+                    Another robot character, though this time much more rigid than CHEF, Billy was primarily an opportunity to have fun with ways I could set up physical driver controls. I learned a lot of new techniques for making controllers from scratch and a new way to arrange finger controls for easier access. Being unable to speak besides making bubble sounds made the movement of his mouth a fun aspect to approach and I’m quite happy with how the lips control.
+                </p>
+                <h3>Henri (The depths of my mind)</h3>
+                <p>
+                    The creature from a small space horror game I worked on, I wanted Henri to stray from traditional monster designs that fell heavily into a zombie-esque vibe. Rather than a mindless, primal beast, I designed Henri as a hyper intelligent, psychic creature that was toying with the player to feed on their fear. The rig itself was quite simple, with a lot of controllers that let Henri’s flesh and brain pulsate and wiggle grossly. My main take away from this project was efficiency, with the whole rig being put together in just 2 hours, which allowed me to focus on animation and environment design.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <h2 id="contact">
+                Contact Me:
+            </h2>
+            <div class="contact-icons">
+                <a href="mailto:lambdre2001@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/lambdre_3d/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/andre-lamb/" target="_blank">
+                    <i class="fa-brands fa-square-linkedin"></i>
+                </a>
+            </div>
+            <div class="footer-spacer"></div>
+        </footer>
+        <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.148.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.148.0/examples/jsm/"
+            }
+        }
+        </script>
+        <script src="javascript/main.js" type="module"></script>
+    </body>
+</html>
