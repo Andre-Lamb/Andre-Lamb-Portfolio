@@ -201,6 +201,9 @@ main img{
     padding: 5px;
     cursor: zoom-in;
 }
+.break{
+    width: 20px !important;
+}
 .clicked-img{
     position: fixed !important;
     width: 70% !important;

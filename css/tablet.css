@@ -33,6 +33,9 @@
         width: 450px;
         padding: 3px;
     }
+    .break{
+    width: 17px !important;
+    }
     .contact-icons{
         gap: 30px;
     }

@@ -72,6 +72,9 @@
         width: 300px;
         padding: 3px;
     }
+    .break{
+    width: 15px !important;
+    }
     .clicked-img{
         width: 84% !important;
         margin-left: 8% !important;
