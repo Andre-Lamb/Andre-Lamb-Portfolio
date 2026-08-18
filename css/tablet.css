@@ -24,6 +24,10 @@
     #home-flag{
         width: 100px;
     }
+    main img{
+        height: 120px;
+        top: 120px;
+    }
     .scroll-container img{
         height: 300px;
         width: 450px;

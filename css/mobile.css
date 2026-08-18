@@ -63,6 +63,10 @@
         transform: translate(-50%, 0);
         font-size: 1.1em;
     }
+    main img{
+        height: 100px;
+        top: 100px;
+    }
     .scroll-container img{
         height: 200px;
         width: 300px;
