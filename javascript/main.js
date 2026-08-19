@@ -9,10 +9,21 @@ ribbon.onclick = function() {
 //Breakdown variables
 const breakdownTitle = document.querySelectorAll('.breakdown-text h3');
 const breakdownText = document.querySelectorAll('.breakdown-text p');
+const breakdownTextDiv = document.querySelector('.breakdown-text');
 const breakdownImageDiv = document.querySelector('.scroll-container');
 const breakdownImageArray = document.querySelectorAll('.scroll-container img');
 let breakdownBigBool = false;
 let breakdownBigId = -1;
+// function breakdownHeight(){
+//     let height = 0;
+//     for (let b = 0; b < breakdownText.length; b++) {
+//         if (breakdownText[b].offsetHeight > height) height = breakdownText[b].offsetHeight;
+//     }
+//     height += 50;
+//     const breakdownTextDiv = document.querySelector('.breakdown-text');
+//     console.log(height);
+//     breakdownTextDiv.style.height = height + 'px';
+// }
 //Changes the text corresponding to breakdown scroll
 function breakdownUpdate(){
     let scrollWidth = breakdownImageDiv.scrollWidth-window.innerWidth;
@@ -28,6 +39,9 @@ function breakdownUpdate(){
         if (index == scrollAmt){
             breakdownTitle[index].style.display = 'block';
             breakdownText[index].style.display = 'block';
+            let newHeight = breakdownText[index].offsetHeight;
+            newHeight += 50;
+            breakdownTextDiv.style.height = newHeight + 'px';
         }
         else{
             breakdownTitle[index].style.display = 'none';
@@ -72,5 +86,7 @@ document.onscroll = function() {
     }
 }
 //Listeners
+// window.addEventListener('load', breakdownHeight);
 window.addEventListener('load', breakdownUpdate);
+// window.addEventListener('resize', breakdownHeight);
 breakdownImageDiv.addEventListener('scroll', breakdownUpdate);

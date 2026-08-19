@@ -67,10 +67,15 @@
         height: 100px;
         top: 100px;
     }
+    .video{
+        width: 84%;
+        margin-left: 8%;
+    }
     .scroll-container img{
         height: 200px;
         width: 300px;
         padding: 3px;
+        scrollbar-width: thin;
     }
     .break{
     width: 15px !important;
