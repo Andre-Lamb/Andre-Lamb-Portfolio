@@ -89,5 +89,5 @@ document.onscroll = function() {
 //Listeners
 // window.addEventListener('load', breakdownHeight);
 window.addEventListener('load', breakdownUpdate);
-// window.addEventListener('resize', breakdownHeight);
+window.addEventListener('resize', breakdownUpdate);
 breakdownImageDiv.addEventListener('scroll', breakdownUpdate);
