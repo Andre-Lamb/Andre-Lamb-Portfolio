@@ -49,6 +49,7 @@ function breakdownUpdate(){
         }
     }
 };
+window.addEventListener('load', breakdownUpdate);
 //Makes an image expand or shrink
 function breakdownImg(i) {
     if (breakdownBigBool) {
