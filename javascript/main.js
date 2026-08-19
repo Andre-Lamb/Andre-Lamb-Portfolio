@@ -1,3 +1,7 @@
+//This code hides the entire page
+// const body = document.querySelector('body');
+// body.style.display = 'none';
+
 //Mobile ribbon variables
 const ribbon = document.querySelector('.mobile-flag');
 let ribbonDown = false;
@@ -14,6 +18,8 @@ const breakdownImageDiv = document.querySelector('.scroll-container');
 const breakdownImageArray = document.querySelectorAll('.scroll-container img');
 let breakdownBigBool = false;
 let breakdownBigId = -1;
+
+//This code tries to keep the process breakdown div taller than the tallest text
 // function breakdownHeight(){
 //     let height = 0;
 //     for (let b = 0; b < breakdownText.length; b++) {
@@ -24,6 +30,7 @@ let breakdownBigId = -1;
 //     console.log(height);
 //     breakdownTextDiv.style.height = height + 'px';
 // }
+
 //Changes the text corresponding to breakdown scroll
 function breakdownUpdate(){
     let scrollWidth = breakdownImageDiv.scrollWidth-window.innerWidth;
@@ -59,6 +66,9 @@ function breakdownImg(i) {
         }
         return;
     }
+    if (breakdownImageArray[i].classList.contains('break')) {
+        return;
+    }
     breakdownImageArray[i].classList.toggle('clicked-img');
     breakdownBigId = i;
     breakdownBigBool = true;
@@ -91,3 +101,8 @@ document.onscroll = function() {
 window.addEventListener('load', breakdownUpdate);
 window.addEventListener('resize', breakdownUpdate);
 breakdownImageDiv.addEventListener('scroll', breakdownUpdate);
+// document.onreadystatechange = () => {
+//   if (document.readyState === "complete") {
+//     body.style.display = 'block';
+//   }
+// };
